@@ -3,69 +3,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nông Thị Hoài Huyên - 12C3</title>
+    <title>Danh sách tên</title>
     <style>
+        /* Cấu hình cơ bản cho toàn bộ trang */
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
+            margin: 0;
+            padding: 20px;
             background-color: #f4f4f4;
         }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        h1 {
-            color: #2c3e50;
-        }
+
         h2 {
-            color: #16a085;
+            text-align: center;
+            color: #333;
         }
-        .slogan {
-            font-style: italic;
-            color: #e74c3c;
-            font-size: 15px;
-            margin-top: 10px;
-        }
-        .info-box {
-            border: 2px solid #000000;
-            padding: 15px;
-            margin-top: 20px;
-            border-radius: 10px;
-        }
-        img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        video {
+
+        /* Định dạng cho bảng */
+        table {
             width: 100%;
+            border-collapse: collapse;
             margin-top: 20px;
-            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        /* Định dạng tiêu đề của bảng */
+        th {
+            background-color: #555;
+            color: white;
+        }
+
+        /* Tạo hiệu ứng khi di chuột qua hàng */
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Định dạng cho liên kết trong bảng */
+        .hidden-link {
+            text-decoration: none;
+            color: #007BFF;
+            cursor: pointer;
+        }
+
+        /* Thay đổi màu khi di chuột qua liên kết */
+        .hidden-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Cải thiện vẻ ngoài của bảng */
+        table th, table td {
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Tạo hiệu ứng cuộn ngang cho bảng nếu cần */
+        .table-container {
+            overflow-x: auto;
         }
     </style>
+    <script>
+        function redirect(url) {
+            window.location.href = url;
+        }
+    </script>
 </head>
 <body>
-    <div class="container">
-        <img src="./IMG_6214.JPG" alt="Ảnh đại diện">
-        <h1>Nông Thị Hoài Huyên</h1>
-        <p class="slogan">"Ăn tranh thủ, ngủ khẩn trương, học hết sức, chơi hết mình"</p>
 
-        <div class="info-box">
-            <h2>Thông Tin Cá Nhân</h2>
-            <p><strong>Họ và Tên:</strong> Nông Thị Hoài Huyên</p>
-            <p><strong>Lớp:</strong> 12C3</p>
-            <p><strong>Năm sinh:</strong> 2007</p>
-            <p><strong>Sở thích:</strong> Nghe nhạc, xem phim, du lịch</p>
-        </div>
+<h2>Danh sách làm bài lớp 12C3 </h2>
 
-        <video src="./video2.mp4" controls></video>
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Số thứ tự</th>
+                <th>Tên</th>
+                <th>Liên kết</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Hoàng Quỳnh Anh</td>
+                <td><a class="hidden-link" onclick="redirect('./hoang-quynh-anh')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Phạm Ngọc Quỳnh Anh</td>
+                <td><a class="hidden-link" onclick="redirect('./pham-ngoc-quynh-anh')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ksor Duin</td>
+                <td><a class="hidden-link" onclick="redirect('./ksor-duin')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Lê Công Thành Đạt</td>
+                <td><a class="hidden-link" onclick="redirect('./le-cong-thanh-dat')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Hoàng Ngọc Điệp</td>
+                <td><a class="hidden-link" onclick="redirect('./hoang-ngoc-diep')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Nguyễn Hoàng Anh Đức</td>
+                <td><a class="hidden-link" onclick="redirect('./nguyen-hoang-anh-duc')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Nguyễn Hồng Anh Đức</td>
+                <td><a class="hidden-link" onclick="redirect('./nguyen-hong-anh-duc')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Thới Ngọc Anh Đức</td>
+                <td><a class="hidden-link" onclick="redirect('./thoi-ngoc-anh-duc')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Trần Thị Thu Hà</td>
+                <td><a class="hidden-link" onclick="redirect('./tran-thi-thu-ha')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Hà Trọng Hiền</td>
+                <td><a class="hidden-link" onclick="redirect('./ha-trong-hien')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Dương Trần Nhật Minh</td>
+                <td><a class="hidden-link" onclick="redirect('./duong-tran-nhat-minh')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Nông Thị Hoài Huyên</td>
+                <td><a class="hidden-link" onclick="redirect('./nong-thi-hoai-huyen')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Ksor H' Ji Na</td>
+                <td><a class="hidden-link" onclick="redirect('./ksor-h-ji-na')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Phạm Đức Hùng</td>
+                <td><a class="hidden-link" onclick="redirect('./pham-duc-hung')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Ki</td>
+                <td><a class="hidden-link" onclick="redirect('./ki')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Triệu Văn Ngân</td>
+                <td><a class="hidden-link" onclick="redirect('./trieu-van-ngan')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Nguyễn Ngọc Long</td>
+                <td><a class="hidden-link" onclick="redirect('./nguyen-ngoc-long')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Võ Ngọc Uyên Nhi</td>
+                <td><a class="hidden-link" onclick="redirect('./vo-ngoc-uyen-nhi')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Trần Thị Trà My</td>
+                <td><a class="hidden-link" onclick="redirect('./tran-thi-tra-my')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Ngô Nhật Phi</td>
+                <td><a class="hidden-link" onclick="redirect('./ngo-nhat-phi')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Nguyễn Hoàng Anh Thư</td>
+                <td><a class="hidden-link" onclick="redirect('./nguyen-hoang-anh-thu')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Phan Thị Kiều Ngân</td>
+                <td><a class="hidden-link" onclick="redirect('./phan-thi-kieu-ngan')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Ksor Lê Thị Thu Trinh</td>
+                <td><a class="hidden-link" onclick="redirect('./ksor-le-thi-thu-trinh')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Lê Thị Mẫn Nghi</td>
+                <td><a class="hidden-link" onclick="redirect('./le-thi-man-nghi')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Ksor H' Ngoai</td>
+                <td><a class="hidden-link" onclick="redirect('./ksor-h-ngoai')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>Siu H' Ngon</td>
+                <td><a class="hidden-link" onclick="redirect('./siu-h-ngon')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Nguyễn Thị Thảo Nguyên</td>
+                <td><a class="hidden-link" onclick="redirect('./nguyen-thi-thao-nguyen')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>Trần Thảo Nguyên</td>
+                <td><a class="hidden-link" onclick="redirect('./tran-thao-nguyen')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>Nguyễn Lê Yến Nhi</td>
+                <td><a class="hidden-link" onclick="redirect('./nguyen-le-yen-nhi')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>Nguyễn Thị Yến Nhi</td>
+                <td><a class="hidden-link" onclick="redirect('./nguyen-thi-yen-nhi')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>Lê Thị Quỳnh Như</td>
+                <td><a class="hidden-link" onclick="redirect('./le-thi-quynh-nhu')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>Nguyễn Ngọc Bảo Sinh</td>
+                <td><a class="hidden-link" onclick="redirect('./nguyen-ngoc-bao-sinh')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>Ngô Văn Tài</td>
+                <td><a class="hidden-link" onclick="redirect('./ngo-van-tai')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>Nguyễn Nguyên Chí Tài</td>
+                <td><a class="hidden-link" onclick="redirect('./nguyen-nguyen-chi-tai')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td>Lê Nguyễn Bảo Thi</td>
+                <td><a class="hidden-link" onclick="redirect('./le-nguyen-bao-thi')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td>Phan Trần Việt Thi</td>
+                <td><a class="hidden-link" onclick="redirect('./phan-tran-viet-thi')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <td>Mai Công Thuận</td>
+                <td><a class="hidden-link" onclick="redirect('./mai-cong-thuan')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td>Lê Nguyễn Thủy Tiên</td>
+                <td><a class="hidden-link" onclick="redirect('./le-nguyen-thuy-tien')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>39</td>
+                <td>Rơ Cơm Tiên</td>
+                <td><a class="hidden-link" onclick="redirect('./ro-com-tien')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td>Trần Trịnh Trọng Tín</td>
+                <td><a class="hidden-link" onclick="redirect('./tran-trinh-trong-tin')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td>Võ Thị Mỹ Trinh</td>
+                <td><a class="hidden-link" onclick="redirect('./vo-thi-my-trinh')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>42</td>
+                <td>Nguyễn Thị Hồng Vân</td>
+                <td><a class="hidden-link" onclick="redirect('./nguyen-thi-hong-van')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>43</td>
+                <td>Nguyễn Thị Vy</td>
+                <td><a class="hidden-link" onclick="redirect('./nguyen-thi-vy')">Xem</a></td>
+            </tr>
+            <tr>
+                <td>44</td>
+                <td>Dương Gia Hưng</td>
+                <td><a class="hidden-link" onclick="redirect('./duong-gia-hung')">Xem</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-        <audio src="./video2.mp4" controls></audio>
-    </div>
 </body>
 </html>
